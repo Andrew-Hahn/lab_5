@@ -81,7 +81,7 @@ function loadStatsPage() {
 							var row = table.rows[rowNumber];
 							var buffScore = row.cells[2].innerHTML;
 							var awayScore = row.cells[3].innerHTML;
-							if(buffScore > awayScore) {
+							if(parseInt(buffScore) > parseInt(awayScore)) {
 									row.cells[4].innerHTML += "CU Boulder";
 									homeWins += 1;
 							}
